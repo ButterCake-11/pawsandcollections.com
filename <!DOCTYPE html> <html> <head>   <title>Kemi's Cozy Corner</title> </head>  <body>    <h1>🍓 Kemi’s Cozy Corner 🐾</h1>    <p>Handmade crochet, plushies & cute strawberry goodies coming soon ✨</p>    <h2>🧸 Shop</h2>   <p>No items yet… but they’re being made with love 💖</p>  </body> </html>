@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paw Click 🐾</title>
+
+  <style>
+    body {
+      background: #ffd6e7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial;
+    }
+
+    .paw {
+      font-size: 80px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      user-select: none;
+    }
+
+    .paw:active {
+      transform: scale(0.8);
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #6b3e3e;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div style="text-align:center;">
+    <div class="paw" onclick="squish()">🐾</div>
+    <div class="message" id="msg">Click the paw!</div>
+  </div>
+
+  <script>
+    function squish() {
+      document.getElementById("msg").innerText = "squishhh 🐾💖";
+    }
+  </script>
+
+</body>
+</html>
